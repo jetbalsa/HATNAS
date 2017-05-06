@@ -1,0 +1,61 @@
+body { /*css for full size background image*/
+  background: url(/res/bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height:100%;  
+  height: 100%;
+  background-color: #000; 
+}
+.trans-bg {
+ background-color:rgba(0, 0, 0, 0.5);
+}
+
+.trans-bg-2 {
+ background-color:rgba(0, 0, 0, 0.8);
+}
+
+
+input { width: 250px !important; }
+select { width: 250px !important; }
+
+.blink {
+  -webkit-animation: fade 0.5s alternate infinite;
+  animation: fade 0.5s alternate infinite;
+
+}
+
+.slowblink {
+  -webkit-animation: fade 2s alternate infinite;
+  animation: fade 2s alternate infinite;
+
+}
+
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.4;
+  }
+
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.4;
+  }
+}

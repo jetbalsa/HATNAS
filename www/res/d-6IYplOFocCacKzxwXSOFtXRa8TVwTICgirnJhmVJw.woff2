@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>HATNAS v1.337</title>
+    <meta name="description" content="A Public Hat Based NAS">
+    <meta name="author" content="Forrest Fuqua AKA JetBalsa">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/res/bootstrap.min.css" rel="stylesheet">
+    <link href="/res/crashoverride.css" rel="stylesheet">
+  </head>
+  <body><div class="container">
+  <div class="row"><br><br><br><!-- DEM BRs I'm a PHP Programmer, not a UI Designer :P -->
+        <div class="col-md-6 center-block trans-bg">
+	<a href="/"><img src="/res/hatnas.png"></a><br><br><br><br>
+        <div class="col-md-6">
+        <div class="btn-group">
+  	<a href="/" class="btn btn-default">Upload a File</a>
+  	<a href="/about.php" class="btn btn-default trans-bg">About</a>
+  	<a href="/list.php" class="btn btn-default trans-bg">File List</a></div>
+        <br><br>
+<form role="form" class="form-horizontal" action="/upload.php" method="POST" enctype="multipart/form-data">
+  <div class="form-group">
+     <label for="InputName">Hacker Name:</label>
+    <input type="text" class="form-control" id="InputName" name="InputName" required placeholder="Hacker Name">
+    <p class="help-block">A-Z,a-z,0-9, 16</p>
+  </div>
+  <div class="form-group">
+    <label for="InputName">Folder:</label>
+     <select class="form-control" name="folder">
+      <option value="1">Other</option>
+      <option value="2">Images</option>
+      <option value="3">Porn</option>
+      <option value="4">Books / Text</option>
+      <option value="5">Tools</option>
+      <option value="6">Code</option>
+      <option value="7">Videos</option>
+      <option value="8">Music</option>
+      </select>
+  </div>
+  <div class="form-group"><!-- NEEDS MAOR JPEG -->
+    <label for="AntiHatHax">Enter Code:<br><img alt='Refresh Page to get new code' src='data:image/jpg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD//gA6Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2ODApLCBxdWFsaXR5ID0gMQr/2wBDAP//////////////////////////////////////////////////////////////////////////////////////2wBDAf//////////////////////////////////////////////////////////////////////////////////////wAARCAAtAHgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwBtHFFJQAtH40qrmlYDPpQA3HpzQQR1p5OOBQMkEGi4EdFLT+FHTJoAjoqQEHggCkAyfYUANII60lSNggH8KF4BNADNp9KKXc1K3Y/nQAyiiigQtFFFABTn6/hSAZ6U5h39qBjKeGHTGKQY70vA75NADSMHFOIBxk44ppOTTiMgY7UAJtB6GnYwMDv1pApByaaSc+1ADwOMH9KQEZwOQaapweelAODQA4kA9Mmg4YH1FGFPOaQkAYFADKKWigPkFFJmloC4Zx7UZP8Ak0lLQAZoopKAFozSUUBYXJ9aSloouAlLig0UAGKKKKACiiikB//Z'></label>
+    <input type="number" class="form-control" id="AntiHatHax" required name="AntiHatHax">
+  </div>
+  <div class="form-group">
+    <label for="userFile">File</label>
+    <input type="file" id="userFile" name="userFile" required placeholder="C:\NSASECRETS.TXT">
+</label>
+    <p class="help-block">A-Z,a-z,0-9, 16.4, 25MB</p>
+  </div>
+  <input type="hidden" name="AntiHatHaxHash" value="1488956747:919bc42377c7bc1a58c017c7729e625a24720e28192e00f8a0c4f001e35fd4f3">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <button type="submit" class="btn btn-success">Submit</button>
+</form><br></div>
+
+
+        </div>
+  </div></div>
+
+
+
+   <script src="/js/jquery.min.js"></script>
+   <script src="/js/bootstrap.min.js"></script>
+  </body>
+</html>
+
