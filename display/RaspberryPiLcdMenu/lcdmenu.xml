@@ -1,0 +1,39 @@
+<application>
+  <settings lcdBackground="On" />
+  <folder text="HATNAS Oper">
+	<folder text="FileMan">
+	<widget text="Delete By Num" function="NASDelete" />
+	<widget text="Hide By Num" function="NASHide" />
+	</folder>
+	<widget text="Lock LCD" function="HatNasLock" />
+	<widget text="SoftReboot" function="SoftReboot" />
+  </folder>
+  <folder text="System Info">
+    <widget text="Show Date/Time" function="ShowDateTime" />
+    <widget text="Get GPS Date/Time" function="GetGPSTime" />
+    <widget text="Set GPS Date/Time" function="SetGPSTime" />
+    <widget text="Restart gpsd" function="KillGPSTime" />
+    <widget text="Set Date/Time" function="SetDateTime" />
+    <folder text="Network">
+      <widget text="IP Address" function="ShowIPAddress" />
+      <widget text="Use 10.1.1.2" function="Use10Network" />
+      <widget text="Use DHCP" function="UseDHCP" />
+    </folder>
+    <folder text="LCD Color">
+      <widget text="Red" function="LcdRed" />
+      <widget text="Green" function="LcdGreen" />
+      <widget text="Blue" function="LcdBlue" />
+      <widget text="Yellow" function="LcdYellow" />
+      <widget text="Teal" function="LcdTeal" />
+      <widget text="Violet" function="LcdViolet" />
+      <widget text="White" function="LcdOn" />
+      <widget text="Off" function="LcdOff" />
+    </folder>
+    <run text="Run ls">ls</run>
+    <widget text="Enter a word" function="EnterWord" />
+  </folder>
+  <widget text="Quit" function="DoQuit" />
+  <widget text="Reboot" function="DoReboot" />
+  <widget text="Shutdown" function="DoShutdown" />
+</application>
+
